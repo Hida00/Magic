@@ -8,7 +8,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
-    MAGICAL_WOOD(1,1,1.0f,1.0f,1,()-> {
+    MAGICAL_WOOD(2,128,1.0f,1.0f,1,()-> {
         return Ingredient.fromTag(ItemTags.PLANKS);
     });
     private final int harvestLevel;

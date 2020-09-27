@@ -7,14 +7,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
 
-public class MagicWood extends Block {
-    public MagicWood(float hardness,float resistance){
-        super(Block.Properties.create(Material.WOOD)
-                .hardnessAndResistance(hardness,resistance)
-                .sound(SoundType.WOOD)
-                .harvestLevel(0).harvestTool(ToolType.AXE));
-    }
-    public MagicWood(String name,float hardness,float resistance){
+public class MagicPlank extends Block {
+    public MagicPlank(String name,float hardness,float resistance){
         super(Block.Properties.create(Material.WOOD)
                 .hardnessAndResistance(hardness,resistance)
                 .sound(SoundType.WOOD)

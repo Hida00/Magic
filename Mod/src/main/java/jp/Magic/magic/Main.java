@@ -27,7 +27,7 @@ import org.apache.logging.log4j.Logger;
 public class Main
 {
     public static final String MODID = "magic";
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static PlayerEntity player;
 
     public static final ItemGroup MAGIC_MOD = new ModItemGroups(MODID,() -> new ItemStack(ModItems.Magic_Sword));
@@ -41,6 +41,7 @@ public class Main
 
     @SubscribeEvent
     public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event){
+        System.setProperty("Java.net.preferIPv4Stack" , "true");
         player = event.getPlayer();
     }
 }
