@@ -1,4 +1,4 @@
-package jp.Magic.magic.Item;
+package jp.Magic.magic.util;
 
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;

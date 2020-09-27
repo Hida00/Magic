@@ -1,7 +1,8 @@
 package jp.Magic.magic.init;
 
 import jp.Magic.magic.Item.MagicSword;
-import jp.Magic.magic.Item.ModItemTier;
+import jp.Magic.magic.Item.Wand;
+import jp.Magic.magic.util.ModItemTier;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,6 +13,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 
     public static final Item Magic_Sword = new MagicSword("magic_sword", ModItemTier.MAGICAL_WOOD,5,2.2f);
+    public static final Item Wand = new Wand("wand");
 
     @SubscribeEvent
     public static void onItemsRegistry(final RegistryEvent.Register<Item> event){
