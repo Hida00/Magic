@@ -1,7 +1,10 @@
 package jp.Magic.magic.init;
 
 import jp.Magic.magic.Block.MagicWood;
+import jp.Magic.magic.Main;
 import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +20,13 @@ public class ModBlock {
         IForgeRegistry<Block> registry = event.getRegistry();
         registry.registerAll(
                 Magic_Wood
+        );
+    }
+    @SubscribeEvent
+    public static void onItemRegistry(final RegistryEvent.Register<Item> event){
+        IForgeRegistry<Item> registry = event.getRegistry();
+        registry.registerAll(
+                new BlockItem(Magic_Wood,new Item.Properties().group(Main.MAGIC_MOD))
         );
     }
 }

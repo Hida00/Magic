@@ -3,6 +3,7 @@ package jp.Magic.magic.init;
 import jp.Magic.magic.Item.MagicSword;
 import jp.Magic.magic.Item.Wand;
 import jp.Magic.magic.util.ModItemTier;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
