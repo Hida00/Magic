@@ -41,7 +41,6 @@ public class Main
 
     @SubscribeEvent
     public void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event){
-        System.setProperty("Java.net.preferIPv4Stack" , "true");
         player = event.getPlayer();
     }
 }

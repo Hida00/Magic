@@ -1,6 +1,7 @@
 {
   "item.magic.magic_sword" : "Magic Sword",
   "item.magic.wand" : "Wand",
+  "item.magic.magicstick": "Magic Stick",
   "block.magic.magicwood": "Magic Wood",
   "block.magic.magicplank": "Magic Plank",
   "itemGroup.magic": "Magic"
