@@ -19,7 +19,7 @@ public class ModItems {
     public static void onItemsRegistry(final RegistryEvent.Register<Item> event){
         IForgeRegistry<Item> registry = event.getRegistry();
         registry.registerAll(
-                Magic_Sword
+                Magic_Sword,Wand
         );
     }
 }
