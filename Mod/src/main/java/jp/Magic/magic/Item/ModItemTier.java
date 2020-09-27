@@ -7,8 +7,8 @@ import net.minecraft.util.LazyValue;
 
 import java.util.function.Supplier;
 
-public enum MagicItemTier implements IItemTier {
-    VENEER(1,1,1.0f,1.0f,1,()-> {
+public enum ModItemTier implements IItemTier {
+    MAGICAL_WOOD(1,1,1.0f,1.0f,1,()-> {
         return Ingredient.fromTag(ItemTags.PLANKS);
     });
     private final int harvestLevel;
@@ -18,7 +18,7 @@ public enum MagicItemTier implements IItemTier {
     private final int enchantability;
     private final LazyValue<Ingredient> repairMaterial;
 
-    MagicItemTier(int harvestLevel, int maxUses, float efficiency, float attackDamage,int enchantability, Supplier<Ingredient> repairMaterial){
+    ModItemTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial){
         this.harvestLevel = harvestLevel;
         this.maxUses = maxUses;
         this.efficiency = efficiency;

@@ -1,7 +1,11 @@
 package jp.Magic.magic;
 
+import jp.Magic.magic.init.ModItemGroups;
+import jp.Magic.magic.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
@@ -26,6 +30,7 @@ public class Main
     private static final Logger LOGGER = LogManager.getLogger();
     public static PlayerEntity player;
 
+    public static final ItemGroup MAGIC_MOD = new ModItemGroups(MODID,() -> new ItemStack(ModItems.Magic_Sword));
     public static final String ITEM_ID_MAGIC_SWORD = "magic_sword";
 
     public Main() {
