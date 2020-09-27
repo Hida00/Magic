@@ -27,27 +27,15 @@ public enum MagicItemTier implements IItemTier {
         this.repairMaterial = new LazyValue<>(repairMaterial);
     }
     @Override
-    public int getHarvestLevel(){
-        return harvestLevel;
-    }
+    public int getHarvestLevel(){ return harvestLevel; }
     @Override
-    public int getMaxUses(){
-        return maxUses;
-    }
+    public int getMaxUses(){ return maxUses; }
     @Override
-    public float getEfficiency(){
-        return efficiency;
-    }
+    public float getEfficiency(){ return efficiency; }
     @Override
-    public float getAttackDamage(){
-        return attackDamage;
-    }
+    public float getAttackDamage(){ return attackDamage; }
     @Override
-    public int getEnchantability(){
-        return enchantability;
-    }
+    public int getEnchantability(){ return enchantability; }
     @Override
-    public Ingredient getRepairMaterial(){
-        return repairMaterial.getValue();
-    }
+    public Ingredient getRepairMaterial(){ return repairMaterial.getValue(); }
 }

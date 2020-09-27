@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class Items {
+public class InitItems {
     @SubscribeEvent
     public static void onItemsRegistry(final RegistryEvent.Register<Item> event){
         IForgeRegistry<Item> registry = event.getRegistry();
