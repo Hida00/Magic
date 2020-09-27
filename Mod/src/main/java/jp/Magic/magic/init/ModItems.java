@@ -12,7 +12,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModItems {
 
-    public static final Item Magic_Sword = new MagicSword("magic_sword", ModItemTier.MAGICAL_WOOD,5,2.2f);
+    public static final Item Magic_Sword = new MagicSword("magic_sword", ModItemTier.MAGICAL_WOOD,5,1.2f);
     public static final Item Wand = new Wand("wand");
 
     @SubscribeEvent
