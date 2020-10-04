@@ -4,5 +4,19 @@
   "item.magic.magicstick": "Magic Stick",
   "block.magic.magicwood": "Magic Wood",
   "block.magic.magicplank": "Magic Plank",
-  "itemGroup.magic": "Magic"
+  "itemGroup.magic": "Magic",
+
+  "_comment": "Entity",
+  "entity.magic.magic_entity": "Magic Entity",
+  "item.magic.magic_entity_spawn_egg": "Magic Entity Spawn Egg",
+
+  "_comment": "Subtitles",
+  "magic:subtitles.magic.ambient": "Magic Entity squawks",
+  "magic:subtitles.magic.baby.ambient": "Magic Entity Baby squawks",
+  "magic:subtitles.magic.death": "Magic Entity dies",
+  "magic:subtitles.magic.hurt": "Magic Entity hurts",
+
+  "_comment": "Tooltip",
+  "magic:config.category.general.tooltip": "General config option for Magic",
+  "magic:config.category.spawnchances.tooltip": "Configurable spawn chances for entity"
 }
