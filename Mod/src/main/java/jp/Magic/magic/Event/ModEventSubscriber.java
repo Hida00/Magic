@@ -15,5 +15,4 @@ public class ModEventSubscriber {
         String S = event.getHand().name();
         Main.LOGGER.debug(S + "-------------------------");
     }
-
 }

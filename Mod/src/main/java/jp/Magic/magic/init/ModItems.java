@@ -25,7 +25,9 @@ public class ModItems {
         IForgeRegistry<Item> registry = event.getRegistry();
         registry.registerAll(
                 Magic_Sword,Wand,Magic_Stick,
-                ModBlock.Magic_Wood_Item,ModBlock.Magic_Plank_Item
+                ModBlock.Magic_Wood_Item,ModBlock.Magic_Plank_Item,
+                ModBlock.Magic_Leave_Item,
+                ModBlock.Magic_Sapling_Item
         );
     }
 }

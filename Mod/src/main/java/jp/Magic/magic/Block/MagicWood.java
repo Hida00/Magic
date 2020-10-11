@@ -15,10 +15,14 @@ public class MagicWood extends Block {
                 .harvestLevel(0).harvestTool(ToolType.AXE));
     }
     public MagicWood(String name,float hardness,float resistance){
-        super(Block.Properties.create(Material.WOOD)
+        super(
+            Block.Properties.create(Material.WOOD)
                 .hardnessAndResistance(hardness,resistance)
                 .sound(SoundType.WOOD)
-                .harvestLevel(0).harvestTool(ToolType.AXE));
+                .harvestLevel(0)
+                .harvestTool(ToolType.AXE)
+                .sound(SoundType.WOOD)
+        );
         this.setRegistryName(new ResourceLocation(Main.MODID,name));
     }
 }
